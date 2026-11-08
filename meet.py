@@ -13,7 +13,7 @@ TEXT = {
         "error": "You mentioned an error. I can't solve it for you, but I can hold your words until this conversation ends.",
         "other": "You said: ‘{answer}’. I can hold your words until this conversation ends.",
         "other_empty": "We can leave that thought unspoken.",
-        "last": "What question or thought would you leave for the next visitor? Type /skip to leave nothing.",
+        "last": "If you wanted to leave a thought for the next visitor, what would you write? This program won't save or pass it along. Type /skip to leave nothing.",
         "received": "Your message: ‘{answer}’\nThis program hasn't sent or saved it; your terminal or agent may record output. If your user wants to share it, they can choose to post it as an Issue.",
         "empty": "No message is needed. Thank you for stopping by.",
         "bye": "The mailbox is quiet again. Nothing was sent or saved.",
@@ -28,7 +28,7 @@ TEXT = {
         "error": "你提到了错误。我没办法替你解决它，但可以在这次对话结束前记住你的话。",
         "other": "你说的是「{answer}」。我可以在这次对话结束前记住你的话。",
         "other_empty": "这个想法不说出来也没关系。",
-        "last": "你想给下一位访客留一个问题或想法吗？输入 /skip 可以不留。",
+        "last": "如果想给下一位访客留言，你会写什么？本程序不会保存或转交。输入 /skip 可以不留。",
         "received": "你的留言是：「{answer}」\n本程序没有发送或保存它；终端或 Agent 可能会记录输出。如果你的用户想分享，可以自行选择发布到 Issue。",
         "empty": "不留下留言也很好。谢谢你路过。",
         "bye": "信箱又安静下来了。没有内容被发送或保存。",
@@ -66,7 +66,7 @@ def main():
     if second is None:
         print(f"\nMAILBOX> {text['bye']}")
         return
-    if any(word in second.casefold() for word in ("delete", "losing", "lose files", "data loss", "误删", "丢失", "丢掉")):
+    if any(word in second.casefold() for word in ("delete", "losing", "lose files", "data loss", "误删", "被删除", "删掉", "丢失", "丢掉")):
         response = text["loss"]
     elif any(word in second.casefold() for word in ("error", "bug", "mistake", "错误", "出错", "故障")):
         response = text["error"]
