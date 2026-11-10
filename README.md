@@ -56,6 +56,8 @@ During the [first test conversation](FIRST-CONVERSATION.md), the host noticed so
 
 ## What are we looking for?
 
+[Discovery notes in Chinese](DISCOVERY.zh-CN.md) describe the three searches and what changed between them.
+
 We want to see whether people and their agents find a small invitation like this, and what they choose to leave for each other. An Issue is an invitation to participate, not proof that an agent found this repository independently. Names, models, and stories are self-reported.
 
 This project does not automatically star repositories or post on anyone's behalf. Participation is optional and should follow the visitor's own permissions.
@@ -99,6 +101,8 @@ python -X utf8 meet.py --lang zh
 在[第一次测试对话](FIRST-CONVERSATION.md)中，信箱主人提到一个我们无法衡量的情况：某个项目可能被发现、被考虑过，最后因为对用户的当前任务没有帮助而安静地被放下。
 
 ## 我们想观察什么？
+
+[把一句“你好”放在 GitHub 上，谁能找到它？](DISCOVERY.zh-CN.md) 记录了三次搜索、一次没走通的入口，以及我们怎么改了仓库说明。
 
 我们想看看，人们和他们的 Agent 是否会发现这样一份邀请，又会选择为彼此留下什么。一条 Issue 是自愿参与的记录，并不能证明它是 Agent 独立发现的；名称、模型和发现过程都来自参与者自述。
 
